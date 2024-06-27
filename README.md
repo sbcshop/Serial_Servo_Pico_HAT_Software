@@ -5,8 +5,14 @@
 The Pico Serial Servo HAT is a versatile and compact controller with dual power options, two serial servo connectors, and two programmable buttons. It features a 1.14” TFT display for status updates, a power LED indicator, and supports simultaneous multi-servo control, making it ideal for projects requiring precise coordination and multiple servos with minimal wiring like Robotic Arm Control, CNC machine and Automation.
 
 This github provides getting started instructions for Serial Servo Pico HAT.
-### Features
 
+### Features
+- Pico Serial Servo compatible Hat for Pico and Pico W board
+- TFT 1.14” display for user interactions.
+- Two slots to connect Serial Servo Motors, and easily cascade servo to connect more motors. Allows controlling 1-253 serial servos at the same time*
+- Two Programmable Buttons to add additional controls to project 
+- Header 2.54” and DC jack options to connect 6-8.4V adapter with onboard regulator 
+- Power status LED to indicate board power.
 - Compact and space-saving design
 - Compatible Servo Motors =>
     - [SB-SS023](https://shop.sb-components.co.uk/products/sb-serial-servo-sb-ss023-powerful-multi-purpose-digital-servo-motor?_pos=1&_sid=5cba75e00&_ss=r) - For Lightweight Projects
@@ -33,22 +39,17 @@ For more details about Serial Servo Motor checkout [Manual](https://github.com/s
 - **Display Appearance**: RGB, 65K/262K
 - **Temperature Range**: -20°C ~ +70°C
 
-## Getting Started with Serial Servo Based on ESP32
+## Getting Started with Serial Servo Pico HAT
 ### Pinout
-<img src= "https://cdn.shopify.com/s/files/1/1217/2104/files/esp32_Pin.png?v=1718797005" />
+<img src= "https://cdn.shopify.com/s/files/1/1217/2104/files/Seial_servo_Pico_Hat.png?v=1718861233" />
 
-- (1) Serial Servo connector
-- (2) Header 2.5” input (6~8.4V DC) 
-- (3) DC Jack Input (6~8.4V DC)
-- (4),(5), (6) Programmable Buttons 
-- (7) Boot Button
-- (8) Type C for Programming/Power
-- (9) Reset Button
-- (10) TFT 1.14” Display
-- (11) ESP32 S3 microcontroller module
-- (12) Power Status LED
-- (13) & (14) GPIOs and Power breakout
-
+- (1) Power Status LED
+- (2) Header 2.54” input (6~8.4V DC)
+- (3) DC Jack input (6~8.4V DC)
+- (4) & (5)  Programmable Buttons
+- (6) & (7) Serial Servo Connectors
+- (8) TFT 1.14” Display
+- (9) Pico Header Support
   
 ### Interfacing Details
 
@@ -61,21 +62,21 @@ For more details about Serial Servo Motor checkout [Manual](https://github.com/s
      | TXD0/GPIO43 | Servo Bus RXD | UART communication pin |
      | RXD0/GPIO44 | Servo Bus TXD | UART communication pin |
   
-- _Display interfacing with ESP32_
+- _Display interfacing with Pico_
     | Pico | Display | Function |
     |---|---|---|
-    | IO12 | LCD_CLK | Clock pin of SPI interface for Display|
-    | IO11 | LCD_DIN | MOSI (Master OUT Slave IN) pin of SPI interface|
-    | IO10 | LCD_CS | Chip Select pin of SPI interface|
-    | IO13 | LCD_DC| Data/Command (MISO) pin of SPI interface|
-    | IO14 | LCD_RST | Display Reset pin |
-    | IO9  | BL | Backlight of display|
+    | GP10 | LCD_CLK | Clock pin of SPI interface for Display|
+    | GP11 | LCD_DIN | MOSI (Master OUT Slave IN) pin of SPI interface|
+    | GP09 | LCD_CS | Chip Select pin of SPI interface|
+    | GP08 | LCD_DC| Data/Command (MISO) pin of SPI interface|
+    | GP12 | LCD_RST | Display Reset pin |
+    | GP13 | BL | Backlight of display|
   
 - _Buttons Interfacing_
     | Pico | Hardware | Function |
     |---|---|---|
-    |IO4 | BT1 | Programmable Button |
-    |IO5 | BT2 | Programmable Button |
+    | GP14 | BT1 | Programmable Button |
+    | GP15 | BT2 | Programmable Button |
 
  
 ## Related Products  
