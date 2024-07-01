@@ -53,6 +53,8 @@ For more details about Serial Servo Motor checkout [Manual](https://github.com/s
   
 ### Interfacing Details
 
+<img src= "https://github.com/sbcshop/Serial_Servo_Pico_HAT_Software/blob/main/images/Pico_Serial_Servo_HAT.png" width="376" height="285"/>
+
 When HAT is connected with Pico/Pico W following pins interfaced with onboard hardware components,
  - _Serial Servo Bus Pins:_
    * Servo connector having +ve[6~8.4VDC], -ve[GND] and Signal pin. 
@@ -89,14 +91,15 @@ When HAT is connected with Pico/Pico W following pins interfaced with onboard ha
 - Now your device is in boot mode, and you will see a new mass storage device named "RPI-RP2" as shown in the below figure.
   <img src= "https://github.com/sbcshop/PiCoder-Software/blob/main/images/RPI_folder.jpg" width="720" height="360"/>
 
-- Download the MicroPython firmware file provided in this repo above as ["**_firmware.uf2_**"](https://github.com/sbcshop/Serial_Servo_Pico_HAT_Software/blob/main/firmware.uf2). Drag and drop this **_firmware.uf2_** file onto the RPI-RP2 volume. Your Pico W will reboot. 
-  <img src= "https://github.com/sbcshop/IdentiPi_Software/blob/main/images/fimware_upload.jpg" width="626" height="476">
+- Download the MicroPython firmware file provided in this repo above as ["**_firmware.uf2_**"](https://github.com/sbcshop/Serial_Servo_Pico_HAT_Software/blob/main/firmware.uf2). Drag and drop this **_firmware.uf2_** file onto the RPI-RP2 volume.
+
+  <img src= "https://github.com/sbcshop/Serial_Servo_Pico_HAT_Software/blob/main/images/firmware_install.png" width="740" height="463">
   
 ### 2. Running First Program
    - Download **Thonny IDE** from [Download link](https://thonny.org/) as per your OS and install it.
    - Download this github which contains various examples and open anyone of example in Thonny.
 
-     <img src= "https://github.com/sbcshop/IdentiPi_Software/blob/main/images/identiPi_git_download.jpg" />
+     <img src= "https://github.com/sbcshop/Serial_Servo_Pico_HAT_Software/blob/main/images/github_download.png" width="748" height="336" />
 
    - Now we have **Thonny IDE application** and github example codes, Connect hardware to laptop/PC. Open any example code in Thonny IDE. Then select micropython device at the bottom right with a suitable COM port, as shown in the below figure. You might get a different COM port.
 
@@ -126,13 +129,13 @@ When HAT is connected with Pico/Pico W following pins interfaced with onboard ha
    Using this sample code as a guide, you can modify, build, and share codes!!
    
 ## Resources
-  * [Schematic]()
-  * [Hardware Files]()
-  * [Step File]()
+  * [Schematic](https://github.com/sbcshop/Serial_Servo_Pico_HAT_Hardware/blob/main/Design%20Data/SCH%20Serial%20Servo%20Pico.pdf)
+  * [Hardware Files](https://github.com/sbcshop/Serial_Servo_Pico_HAT_Hardware/tree/main)
+  * [Step File](https://github.com/sbcshop/Serial_Servo_Pico_HAT_Hardware/blob/main/Mechanical%20Data/Serial%20Servo%20pico.step)
   * [MicroPython getting started for RPi Pico/Pico W](https://docs.micropython.org/en/latest/rp2/quickref.html)
   * [Pico W Getting Started](https://projects.raspberrypi.org/en/projects/get-started-pico-w)
   * [RP2040 Datasheet](https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf)
-  * [Serial Servo Manual]()
+  * [Serial Servo Manual](https://github.com/sbcshop/Serial_Servo_Breakout_Software/blob/main/Documents/SB_Servo_User_Manual.pdf)
  
 ## Related Products  
     
