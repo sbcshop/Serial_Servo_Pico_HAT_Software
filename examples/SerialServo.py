@@ -1,4 +1,4 @@
-#from command import Commands
+''' Serial Servo Library '''
 import machine
 from machine import UART
 import time
