@@ -103,29 +103,30 @@ When HAT is connected with Pico/Pico W following pins interfaced with onboard ha
 
    - Now we have **Thonny IDE application** and github example codes, Connect hardware to laptop/PC. Open any example code in Thonny IDE. Then select micropython device at the bottom right with a suitable COM port, as shown in the below figure. You might get a different COM port.
 
-     <img src="https://github.com/sbcshop/IdentiPi_Software/blob/main/images/board_select.jpg">
+     <img src="https://github.com/sbcshop/Serial_Servo_Pico_HAT_Software/blob/main/images/board_select.png">
   
    - Make sure to save _**SerialServo.py**_ library file to device to avoid any execution error.
 
-      <img src= "https://github.com/sbcshop/IdentiPi_Software/blob/main/images/IdentiPi_library.jpg" />
+      <img src= "https://github.com/sbcshop/Serial_Servo_Pico_HAT_Software/blob/main/images/servo_lib.png" />
 
    - Once everything all set, with any demo code open click on green play button to test program.
 
-     <img src= "https://github.com/sbcshop/IdentiPi_Software/blob/main/images/run_program.jpg" />
+     <img src= "https://github.com/sbcshop/Serial_Servo_Pico_HAT_Software/blob/main/images/run_script.png" />
 
    - For standalone execution save script into Pico as main.py,
 
-     <img src= "https://github.com/sbcshop/IdentiPi_Software/blob/main/images/standalone_execution.jpg" />
+     <img src= "https://github.com/sbcshop/Serial_Servo_Pico_HAT_Software/blob/main/images/main_save.png" />
 
      Try out below provided reference example demo codes and modify to build your own application codes.
      
 
 ### Example Codes
    Try reference demo codes to test onboard components of HAT, make sure to save library file to run Serial Servo Motor related codes.
-   - [Display Demo](https://github.com/sbcshop/IdentiPi_Software/blob/main/examples/Demo_LCD.py) : code to test display
-   - [Motor 
+   - [Display Demo](https://github.com/sbcshop/Serial_Servo_Pico_HAT_Software/blob/main/examples/Demo_Display.py) : code to test display
+   - [Motor Mode Demo](https://github.com/sbcshop/Serial_Servo_Pico_HAT_Software/blob/main/examples/Demo_Motor_mode.py) : code to run Serial Servo in Motor Mode, 360 degree rotation
+   - [Servo Mode Demo](https://github.com/sbcshop/Serial_Servo_Pico_HAT_Software/blob/main/examples/Demo_Servo_mode.py) : code to run Servo with angular position
+   - [More..](https://github.com/sbcshop/Serial_Servo_Pico_HAT_Software/tree/main/examples)
 
-   
    Using this sample code as a guide, you can modify, build, and share codes!!
    
 ## Resources
