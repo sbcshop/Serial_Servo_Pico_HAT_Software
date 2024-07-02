@@ -1,4 +1,4 @@
-''' Read Serial Servo Motor ID '''
+''' Read/Write Serial Servo Motor ID '''
 
 #include required libraries
 from SerialServo import SBSServo
@@ -13,5 +13,9 @@ print("Total => ", len(ServoID))
 print("ID List=> ", ServoID)  
 
 
+''' To change ID of servo, use below command '''
+#ID = 3
+#newID = 2
+#servo.writeID(oldID, newID) # pass arguments both old and new ID
 
 
